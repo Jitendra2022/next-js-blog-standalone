@@ -1,5 +1,12 @@
 import mongoose from "mongoose";
 
+// Ensure all models are registered for Mongoose populate() across Next.js routes
+import "@/models/User";
+import "@/models/Category";
+import "@/models/Post";
+import "@/models/Comment";
+import "@/models/Newsletter";
+
 const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {

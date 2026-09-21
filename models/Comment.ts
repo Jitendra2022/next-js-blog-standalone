@@ -1,4 +1,6 @@
 import mongoose, { Schema, Document, Model } from "mongoose";
+import "./Post";
+import "./User";
 
 export type CommentStatus = "approved" | "pending" | "rejected";
 

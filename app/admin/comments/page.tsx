@@ -1,5 +1,6 @@
 import { connectToDatabase } from "@/lib/db/mongodb";
 import { Comment } from "@/models/Comment";
+import { Post } from "@/models/Post";
 import { CommentsModerator } from "@/components/admin/comments-moderator";
 
 export const dynamic = "force-dynamic";

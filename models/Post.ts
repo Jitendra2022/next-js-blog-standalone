@@ -1,4 +1,6 @@
 import mongoose, { Schema, Document, Model } from "mongoose";
+import "./User";
+import "./Category";
 import { IUser } from "./User";
 import { ICategory } from "./Category";
 
