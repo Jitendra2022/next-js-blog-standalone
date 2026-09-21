@@ -7,6 +7,14 @@ import "@/models/Post";
 import "@/models/Comment";
 import "@/models/Newsletter";
 
+// TEMPORARY DEBUG - remove after testing
+console.log("=== ENV DEBUG ===");
+console.log("TEST_VAR:", process.env.TEST_VAR);
+console.log("MONGODB_URI exists:", !!process.env.MONGODB_URI);
+console.log("MONGODB_URI value:", process.env.MONGODB_URI);
+console.log("All env keys with MONGO:", Object.keys(process.env).filter(k => k.includes("MONGO")));
+console.log("=================");
+
 const MONGODB_URI = process.env.MONGODB_URI;
 
 interface MongooseCache {
